@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "407b161a-178e-4799-845e-31c7d46fd854",
+		"name": "VK MiniApps Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2247233"
+	},
+	"item": [
+		{
+			"name": "Get Apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.vk.com/method/apps.get?app_ids=7539087,7942588&return_friends=1&v=5.199&fields=online",
+					"protocol": "https",
+					"host": [
+						"api",
+						"vk",
+						"com"
+					],
+					"path": [
+						"method",
+						"apps.get"
+					],
+					"query": [
+						{
+							"key": "app_ids",
+							"value": "7539087,7942588"
+						},
+						{
+							"key": "return_friends",
+							"value": "1"
+						},
+						{
+							"key": "v",
+							"value": "5.199"
+						},
+						{
+							"key": "fields",
+							"value": "online"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "SET_YOUR_ACCESS_TOKEN",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "query",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "access_token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
